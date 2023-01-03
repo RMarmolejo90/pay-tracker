@@ -1,0 +1,9 @@
+.App{
+    background-color: black;
+    color: white;
+}
+
+.settings{
+    padding: 10px;
+    background-color: blue;
+}
