@@ -8,15 +8,23 @@
 </head>
 <body>
     <header>Pay Tracker</header>
-   <div id="displayHours"></div>
+   <div id="displayHours">0</div>
    <input type="text" name="hours" id="inputHours">
    <div>
         <button id="submit">Submit</button>
         <button id="total">Total</button>
         <button id="clear">Clear</button>
    </div>
-   <div id="payDisplay"></div>
+   <div id="payDisplay">0</div>
    <script>
+          const displayHours = document.getElementById("displayHours");
+          const inputHours = document.getElementById("inputHours");
+          const submit = document.getElementById("submit");
+          submit.addEventListener("click", function(e){
+               console.log("submitted");
+               displayHours.innerHTML = inputHours.value;
+               console.log(inputHours);
+          })
         const total = document.getElementById("total");
         total.addEventListener("click", function(e){
           console.log("its working");
